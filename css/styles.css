@@ -1325,7 +1325,7 @@ input::placeholder {
   | desctop
   |============================
 */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1128px;
     margin: 0 auto;
