@@ -31,7 +31,7 @@
               <a class="header-link link" href="./index.html">Studio</a>
             </li>
             <li class="header-item item">
-              <a class="current header-link link" href="./portfolio.html"
+              <a class="header-link link current" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -40,6 +40,11 @@
             </li>
           </ul>
         </nav>
+        <button class="btn-burger btn js-open-menu" type="button">
+          <svg class="btn-burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <address class="header-addres">
           <ul class="address-list list">
             <li>
@@ -83,10 +88,15 @@
                 <div class="overlay-thumb">
                   <img
                     class="projects-img"
-                    src="./images/level-a/img-2.jpg"
+                    srcset="
+                      ./images/level-a/img-2.png    1x,
+                      ./images/level-a/img-2@2x.png 2x
+                    "
+                    src="./images/level-a/img-2.png"
                     alt="Banking App Interface Concept"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -106,10 +116,15 @@
                 <div class="overlay-thumb">
                   <img
                     class="projects-img"
-                    src="./images/level-a/img-1.jpg"
+                    srcset="
+                      ./images/level-a/img-1.png    1x,
+                      ./images/level-a/img-1@2x.png 2x
+                    "
+                    src="./images/level-a/img-1.png"
                     alt="Cashless Payment"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -129,10 +144,15 @@
                 <div class="overlay-thumb">
                   <img
                     class="projects-img"
-                    src="./images/level-a/img.jpg"
+                    srcset="
+                      ./images/level-a/img.png    1x,
+                      ./images/level-a/img@2x.png 2x
+                    "
+                    src="./images/level-a/img.png"
                     alt="Meditation App"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -153,10 +173,15 @@
                 <div class="overlay-thumb">
                   <img
                     class="projects-img"
-                    src="./images/level-b/img-2.jpg"
+                    srcset="
+                      ./images/level-b/img-2.png    1x,
+                      ./images/level-b/img-2@2x.png 2x
+                    "
+                    src="./images/level-b/img-2.png"
                     alt="Taxi Service"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -176,10 +201,15 @@
                 <div class="overlay-thumb">
                   <img
                     class="projects-img"
-                    src="./images/level-b/img-1.jpg"
+                    srcset="
+                      ./images/level-b/img-1.png    1x,
+                      ./images/level-b/img-1@2x.png 2x
+                    "
+                    src="./images/level-b/img-1.png"
                     alt="Screen Illustrations"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -199,10 +229,15 @@
                 <div class="overlay-thumb">
                   <img
                     class="projects-img"
-                    src="./images/level-b/img.jpg"
+                    srcset="
+                      ./images/level-b/img.png    1x,
+                      ./images/level-b/img@2x.png 2x
+                    "
+                    src="./images/level-b/img.png"
                     alt="Online Courses"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -223,10 +258,15 @@
                 <div class="overlay-thumb">
                   <img
                     class="projects-img"
-                    src="./images/level-c/img-2.jpg"
+                    srcset="
+                      ./images/level-c/img-2.png    1x,
+                      ./images/level-c/img-2@2x.png 2x
+                    "
+                    src="./images/level-c/img-2.png"
                     alt="Instagram Stories Concept"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -246,10 +286,15 @@
                 <div class="overlay-thumb">
                   <img
                     class="projects-img"
-                    src="./images/level-c/img-1.jpg"
+                    srcset="
+                      ./images/level-c/img-1.png    1x,
+                      ./images/level-c/img-1@2x.png 2x
+                    "
+                    src="./images/level-c/img-2.png"
                     alt="Organic Food"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -269,10 +314,15 @@
                 <div class="overlay-thumb">
                   <img
                     class="projects-img"
-                    src="./images/level-c/img.jpg"
+                    srcset="
+                      ./images/level-c/img.png    1x,
+                      ./images/level-c/img@2x.png 2x
+                    "
+                    src="./images/level-c/img-1.png"
                     alt="Fresh Coffee"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -292,7 +342,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-conteiner container">
+      <div class="container footer-conteiner">
         <div class="footer-conteiner-text">
           <a class="footer-logo link" href="./index.html"
             >Web<span class="logo-aside">Studio</span>
@@ -340,6 +390,7 @@
                 aria-label="facebook link"
               >
                 <svg class="team-icon footer-icon" width="24" height="24">
+                  s
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
@@ -379,5 +430,96 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button">
+        <svg class="modal-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#modal-icon"></use>
+        </svg>
+      </button>
+      <div class="burger-container">
+        <ul class="burger-list list">
+          <li class="burger-item item">
+            <a class="burger-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="burger-item item">
+            <a class="burger-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="burger-item item">
+            <a class="burger-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <address class="burger-addres">
+          <ul class="burger-address-list list">
+            <li class="burger-address-tell-item">
+              <a class="burger-addres-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="burger-address-email-item">
+              <a class="burger-addres link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="burger-social-list list">
+            <li class="footer-item item">
+              <a
+                class="socials-link-footer"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram link"
+              >
+                <svg class="team-icon footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item item">
+              <a
+                class="socials-link-footer"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter link"
+              >
+                <svg class="team-icon footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item item">
+              <a
+                class="socials-link-footer"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook link"
+              >
+                <svg class="team-icon footer-icon" width="24" height="24">
+                  s
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item item">
+              <a
+                class="socials-link-footer"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin link"
+              >
+                <svg class="team-icon footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
