@@ -68,7 +68,8 @@ p {
 }
 
 .container {
-  max-width: 396px;
+  padding: 0 16px;
+  max-width: 428px;
   margin: 0 auto;
 }
 /**
@@ -167,6 +168,9 @@ p {
 }
 
 .current {
+  color: var(--ocean);
+}
+.burger-item .current {
   color: var(--ocean);
 }
 
@@ -470,7 +474,7 @@ p {
   |============================
 */
 .customers {
-  padding-top: 96px;
+  padding: 96px 0;
 }
 
 .customers-title {
@@ -494,7 +498,6 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-bottom: 96px;
 }
 
 .customers-item {
@@ -569,6 +572,7 @@ p {
   letter-spacing: 0.03em;
 
   margin-bottom: 17.5px;
+  text-transform: uppercase;
 }
 
 .footer-conteiner-logo {
@@ -912,7 +916,6 @@ input::placeholder {
   gap: 16px;
 }
 .footer-btn-svg {
-  margin-left: 16px;
   fill: var(--white);
 }
 
@@ -1179,14 +1182,29 @@ input::placeholder {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 428px) {
+  .burger-addres-tel {
+    font-size: 26px;
+  }
+  .burger-social-list {
+    gap: 24px;
+  }
+  .modal {
+    width: 310px;
+  }
+}
+
 /**
   |============================
   | tablet
   |============================
+
+
 */
+
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 736px;
+    min-width: 768px;
   }
 
   .btn-burger-icon {
@@ -1241,7 +1259,9 @@ input::placeholder {
   .advantages-item {
     width: calc((100% - 24px) / 2);
   }
-
+  .advantages-subtitle {
+    text-align: left;
+  }
   .work {
     display: none;
     padding-bottom: 120px;
@@ -1257,6 +1277,7 @@ input::placeholder {
     width: calc((100% - 208px) / 2);
     margin: 0;
   }
+
   .customers-list {
     width: 100%;
     flex-wrap: wrap;
@@ -1327,7 +1348,8 @@ input::placeholder {
 */
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1128px;
+    padding: 0 15px;
+    max-width: 1158px;
     margin: 0 auto;
   }
   .header-list {
@@ -1400,11 +1422,14 @@ input::placeholder {
   }
 
   .footer-conteiner-text {
+    align-items: start;
     margin-bottom: 0;
     margin-right: 120px;
   }
 
   .footer-conteiner-logo {
+    align-items: start;
+
     margin-right: 79px;
     margin-bottom: 0;
   }
