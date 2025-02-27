@@ -37,8 +37,6 @@ p {
 ul,
 ol {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 a {
   text-decoration: none;
@@ -52,41 +50,8 @@ button {
 address {
   font-style: normal;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 /* Common */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  overflow: hidden;
-}
-
-.section {
-  padding: 60px 0;
-}
-.section-title {
-  width: 412px;
-  margin: 0 auto 50px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-}
-.accent-text {
-}
 /* #endregion */
 
 /* #region Logo */
@@ -218,7 +183,7 @@ img {
 .team-list {
 }
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 .team-img {
 }
