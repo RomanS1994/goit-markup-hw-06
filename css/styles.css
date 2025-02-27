@@ -12,6 +12,7 @@
 
 body {
   background-color: var(--white-color);
+  color: var(--main-color);
 
   font-family: var(--primary-font);
   font-style: normal;
@@ -94,7 +95,7 @@ img {
   font-family: var(--logo-font);
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -120,6 +121,11 @@ img {
 }
 .nav-item {
 }
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
 .nav-link {
   color: var(--secondary-color);
 
@@ -132,6 +138,12 @@ img {
 .address-item {
 }
 .address-link {
+  color: var(--main-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
 }
 /* #endregion */
 
@@ -151,15 +163,20 @@ img {
   letter-spacing: 0.02em;
 }
 .hero-btn {
-  border-radius: 4px;
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   color: var(--white-color);
 
+  line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0.04.em;
+  letter-spacing: 0.04em;
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
 /* #endregion */
 
 /* #region Benefits */
@@ -176,8 +193,11 @@ img {
 
   font-size: 20px;
   font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .benefits-desc {
+  color: var(--main-color);
 }
 /* #endregion */
 
@@ -189,13 +209,16 @@ img {
   color: var(--secondary-color);
 
   text-align: center;
+  text-transform: capitalize;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 .team-list {
 }
 .team-item {
+  background-color: #ffffff;
 }
 .team-img {
 }
@@ -205,8 +228,11 @@ img {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .team-desc {
+  color: var(--main-color);
   text-align: center;
 }
 
@@ -215,13 +241,16 @@ img {
 /* #region Portfolio */
 .portfolio {
 }
+
 .portfolio-title {
   color: var(--secondary-color);
+  text-transform: capitalize;
 
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 .portfolio-list {
 }
@@ -235,8 +264,10 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .portfolio-deck {
+  color: var(--main-color);
 }
 
 /* #endregion */
