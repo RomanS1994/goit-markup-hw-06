@@ -39,12 +39,12 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -128,6 +128,10 @@ address {
 .header-nav-list {
   display: inline-flex;
   gap: 40px;
+}
+
+.logo-heder {
+  padding: 24px 0;
 }
 .nav-item {
   padding: 24px 0;
@@ -235,6 +239,7 @@ address {
 .benefits-desc {
   color: var(--main-color);
 }
+
 /* #endregion */
 
 /* #region Team */
@@ -348,6 +353,7 @@ address {
 .vrapper-portfolio {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-subtitle {
