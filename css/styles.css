@@ -134,7 +134,6 @@ address {
   padding: 24px 0;
 }
 .nav-item {
-  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -143,7 +142,7 @@ address {
 }
 .nav-link {
   color: var(--secondary-color);
-
+  padding: 24px 0;
   font-weight: 500;
 }
 .header-adress {
