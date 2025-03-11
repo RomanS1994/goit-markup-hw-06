@@ -204,7 +204,7 @@ address {
   margin: 0 auto;
   background-color: var(--secondary-color);
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('/images/hero-bacground.jpg');
+    url('../images/hero-bacground.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
