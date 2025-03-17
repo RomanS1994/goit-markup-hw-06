@@ -672,7 +672,7 @@ address {
   left: 50%;
 
   transform: translate(-50%, -50%);
-  max-width: 408px;
+  width: 408px;
   min-height: 584px;
   flex-shrink: 0;
   padding: 72px 24px 24px 24px;
@@ -863,10 +863,7 @@ input {
 
 /************ коли інпут у стані ************/
 
-.input-checkbox:checked
-  + .privacy-text
-  .new-checkbox
-  .modal-form-checkbox-icon {
+.input-checkbox:checked + .privacy-text .new-checkbox {
   background-color: var(--blue-color);
   border: none;
   fill: var(--cloud-color);
