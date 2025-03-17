@@ -1,5 +1,6 @@
 :root {
   /* Colors */
+  --blue-color: #404bbf;
   --accent-color: #4d5ae5;
   --main-color: #434455;
   --secondary-color: #2e2f42;
@@ -140,7 +141,7 @@ address {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #404bbf;
+  color: var(--blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link {
@@ -153,7 +154,7 @@ address {
 }
 
 .header-nav-list :first-child .nav-link {
-  color: #404bbf;
+  color: var(--blue-color);
 }
 
 .nav-link::after {
@@ -166,7 +167,7 @@ address {
   right: 0;
 
   border-radius: 2px;
-  background: #404bbf;
+  background: var(--blue-color);
 
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
@@ -192,7 +193,7 @@ address {
 
 .address-link:hover,
 .address-link:focus {
-  color: #404bbf;
+  color: var(--blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* #endregion */
@@ -249,7 +250,7 @@ address {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--blue-color);
 }
 
 /* #endregion */
@@ -278,7 +279,7 @@ address {
 
   border-radius: 4px;
   border: 1px solid #8e8f99;
-  background: #f4f4fd;
+  background: var(--cloud-color);
 
   margin-bottom: 8px;
 }
@@ -342,7 +343,7 @@ address {
   width: calc((100% - 3 * 24px) / 4);
 
   border-radius: 0px 0px 4px 4px;
-  background: var(--WHITE, #fff);
+  background: var(--white-color);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -385,21 +386,21 @@ address {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  background-color: #4d5ae5;
+  background-color: var(--accent-color);
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
-  background-color: #404bbf;
+  background-color: var(--blue-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-svg {
   /* : 12px; */
-  fill: #f4f4fd;
+  fill: var(--cloud-color);
 }
 
 /* #endregion */
@@ -464,10 +465,10 @@ address {
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  background-color: #4d5ae5;
+  background-color: var(--accent-color);
 
   padding: 40px 32px;
-  color: #f4f4fd;
+  color: var(--cloud-color);
 
   line-height: 1.5em;
   letter-spacing: 0.02em;
@@ -552,7 +553,7 @@ address {
   width: 24px;
   height: 24px;
 
-  fill: #f4f4fd;
+  fill: var(--cloud-color);
 }
 
 .footer-social-link {
@@ -611,7 +612,7 @@ address {
 
 .footer-submit-btn {
   border-radius: 4px;
-  background-color: #4d5ae5;
+  background-color: var(--accent-color);
 
   padding: 8px 24px;
   display: flex;
@@ -670,6 +671,7 @@ address {
   top: 50%;
   left: 50%;
 
+  transform: translate(-50%, -50%);
   max-width: 408px;
   min-height: 584px;
   flex-shrink: 0;
@@ -747,7 +749,7 @@ address {
   letter-spacing: 0.64px;
 
   border-radius: 4px;
-  background: var(--IRIS, #4d5ae5);
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -784,9 +786,8 @@ address {
 }
 
 .form-input:focus {
-  border-color: #4d5ae5;
+  border-color: var(--accent-color);
 }
-
 .form-input:focus + .form-label-icon {
   fill: rgba(77, 90, 229, 1);
 }
@@ -819,11 +820,12 @@ address {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
+  resize: none;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-texterea:focus {
-  border-color: #4d5ae5;
+  border-color: var(--accent-color);
 }
 input {
   display: block;
@@ -834,7 +836,7 @@ input {
   margin-bottom: 24px;
 }
 
-.form-label-privacy {
+.privacy-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -861,28 +863,38 @@ input {
 
 /************ коли інпут у стані ************/
 
-.input-checkbox:checked > .svg-checkbox {
-  background-color: #404bbf;
+.input-checkbox:checked
+  + .privacy-text
+  > .new-checkbox
+  > .modal-form-checkbox-icon {
+  background-color: var(--blue-color);
   border: none;
+  fill: var(--cloud-color);
 }
 
 .accent-Privacy {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .form-btn-send {
   display: block;
   min-width: 169px;
   height: 56px;
+  margin: 0 auto;
 
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 
   color: #ffffff;
   cursor: pointer;
   border: none;
-  background-color: #4d5ae5;
+  background-color: var(--accent-color);
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  
+.form-btn-send:hover,
+.form-btn-send:focus {
+  background-color: rgb(64, 75, 191);
 }
 /* #endregion */
