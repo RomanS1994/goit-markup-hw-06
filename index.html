@@ -532,47 +532,75 @@
           <div class="form-wraper">
             <label class="form-label" for="user-name">Name </label>
             <div class="form-label-wrapper">
-              <svg class="form-label-icon" width="18" height="18">
+              <input
+                class="form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="form-label-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-              <input class="form-input" type="text" />
             </div>
           </div>
           <div class="form-wraper">
             <label class="form-label" for="user-phone"> Phone </label>
             <div class="form-label-wrapper">
-              <svg class="form-label-icon" width="18" height="18">
+              <input
+                class="form-input"
+                type="number"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="form-label-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-              <input class="form-input" type="number" name="" id="" />
             </div>
           </div>
           <div class="form-wraper">
             <label class="form-label"> Email </label>
             <div class="form-label-wrapper">
-              <svg class="form-label-icon" width="18" height="18">
+              <input
+                class="form-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+              />
+              <svg class="form-label-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-              <input class="form-input" type="email" name="" id="" />
             </div>
           </div>
-          <div class="form-wraper form-texterea">
-            <p class="input-comment">Comment</p>
-            <textarea name="" id="" rows="7">Text input</textarea>
-            <div class="checkbox-wrapper">
-              <input type="checkbox" name=" " id="" />
-              <div class="new-checkbox">
-                <svg class="icon-checkbox-click" width="" height="">
+          <div class="form-wraper form-textarea-wrapper">
+            <label class="form-label" for="user-comment">Comment</label>
+
+            <textarea
+              class="form-texterea"
+              name="user-comment"
+              id="user-comment"
+              rows="7"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox-wrapper">
+            <input
+              class="visually-hidden input-checkbox"
+              type="checkbox"
+              value="true"
+              id="user-privacy"
+              name="user-privacy"
+            />
+            <label for="user-privacy" class="form-label-privacy"
+              >I accept the terms and conditions of the
+              <span class="new-checkbox">
+                <svg class="svg-checkbox" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox-click"></use>
                 </svg>
-              </div>
-              <p class="privacy-text">
-                I accept the terms and conditions of the
-                <a class="accent-Privacy" href="">Privacy Policy </a>
-              </p>
-            </div>
-            <button class="form-btn" type="submit">Send</button>
+              </span>
+              <a class="accent-Privacy" href="">Privacy Policy </a>
+            </label>
           </div>
+          <button class="form-btn-send" type="submit">Send</button>
         </form>
       </div>
     </div>
