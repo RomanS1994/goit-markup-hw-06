@@ -574,14 +574,11 @@ address {
 }
 /************  ************/
 
-.subscribe {
-}
-.footer-social-title {
-}
 .footer-form {
   display: flex;
   gap: 24px;
 }
+
 .footer-input {
   width: 264px;
   height: 40px;
@@ -591,17 +588,24 @@ address {
   border: 1px solid var(--WHITE, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+
+  color: #ffffff;
 }
 
 .footer-input::placeholder {
   padding-left: 16px;
 
-  color: var(--WHITE, #fff);
-  font-family: Roboto;
+  color: #fff;
+
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 200% */
+  line-height: 24px;
   letter-spacing: 0.48px;
 }
 
@@ -662,10 +666,12 @@ address {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
   max-width: 408px;
-  height: 584px;
+  min-height: 584px;
   flex-shrink: 0;
   padding: 72px 24px 24px 24px;
 
@@ -673,6 +679,8 @@ address {
   background: var(--DAIRY, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn {
   position: absolute;
@@ -695,6 +703,7 @@ address {
 }
 .modal-button-icon {
   fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
