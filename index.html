@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>WebStudio</title>
   </head>
   <body>
     <!-- #region Header -->
@@ -36,6 +36,13 @@
             </li>
           </ul>
         </nav>
+        <div class="burger-wrapper">
+          <button class="button burger-btn" type="button" data-menu-open>
+            <svg class="burger-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#burger-menu-btn"></use>
+            </svg>
+          </button>
+        </div>
         <address class="header-adress">
           <ul class="address-list">
             <li class="address-item">
@@ -129,7 +136,8 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/img-01.jpg"
+                src="./images/team/mark.jpg"
+                srcset="./images/team/mark.jpg 1x, ./images/team/mark@2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -172,7 +180,8 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/img-02.jpg"
+                src="./images/team/tom.jpg"
+                srcset="./images/team/tom.jpg 1x, ./images/team/tom@2x.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -215,7 +224,11 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/img-03.jpg"
+                src="./images/team/camila.jpg"
+                srcset="
+                  ./images/team/camila.jpg    1x,
+                  ./images/team/camila@2x.jpg 2x
+                "
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -258,7 +271,11 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/img-04.jpg"
+                src="./images/team/daniel.jpg"
+                srcset="
+                  ./images/team/daniel.jpg    1x,
+                  ./images/team/daniel@2x.jpg 2x
+                "
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -311,7 +328,11 @@
               <div class="overlay-tumb">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio/img-1.jpg"
+                  src="./images/portfolio/1-img.jpg"
+                  srcset="
+                    ./images/portfolio/1-img.jpg    1x,
+                    ./images/portfolio/1-img@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -332,7 +353,11 @@
               <div class="overlay-tumb">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio/img-2.jpg"
+                  src="./images/portfolio/2-img.jpg"
+                  srcset="
+                    ./images/portfolio/2-img.jpg    1x,
+                    ./images/portfolio/2-img@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -352,7 +377,11 @@
               <div class="overlay-tumb">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio/img-3.jpg"
+                  src="./images/portfolio/3-img.jpg"
+                  srcset="
+                    ./images/portfolio/3-img.jpg    1x,
+                    ./images/portfolio/3-img@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -372,7 +401,11 @@
               <div class="overlay-tumb">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio/img-4.jpg"
+                  src="./images/portfolio/4-img.jpg"
+                  srcset="
+                    ./images/portfolio/4-img.jpg    1x,
+                    ./images/portfolio/4-img@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -392,7 +425,11 @@
               <div class="overlay-tumb">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio/img-5.jpg"
+                  src="./images/portfolio/5-img.jpg"
+                  srcset="
+                    ./images/portfolio/5-img.jpg    1x,
+                    ./images/portfolio/5-img@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -412,7 +449,11 @@
               <div class="overlay-tumb">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio/img-6.jpg"
+                  src="./images/portfolio/6-img.jpg"
+                  srcset="
+                    ./images/portfolio/6-img.jpg    1x,
+                    ./images/portfolio/6-img@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -604,6 +645,75 @@
         </form>
       </div>
     </div>
+    <!-- #endregion -->
+    <!-- #region Mobile menu -->
+    <div class="mobile-menu" data-menu>
+      <button type="button" class="modal-btn" data-menu-close>
+        <svg class="modal-button-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Contacts</a>
+        </li>
+      </ul>
+      <div class="link-wrapper">
+        <address class="header-adress header-adress-mob">
+          <ul class="address-list address-list-mob">
+            <li class="address-item">
+              <a
+                class="address-link mpb-address-link"
+                href="mailto:info@devstudio.com"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-link mpb-address-link" href="tel:+110001111111"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="team-icon-list mobile-link-icons">
+          <li class="team-icon-item">
+            <a href="" class="team-icon-link"
+              ><svg class="team-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-icon-item">
+            <a href="" class="team-icon-link"
+              ><svg class="team-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-icon-item">
+            <a href="" class="team-icon-link"
+              ><svg class="team-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-icon-item">
+            <a href="" class="team-icon-link"
+              ><svg class="team-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- #endregion -->
     <script src="./js/modal.js"></script>
   </body>

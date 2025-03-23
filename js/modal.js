@@ -10,3 +10,15 @@ function toggleModal() {
 }
 
 console.log(document.forms);
+
+const mobMenu = document.querySelector('[data-menu]');
+
+const menuOpenBtn = document.querySelector('[data-menu-open]');
+const menuCloseBtn = document.querySelector('[data-menu-close]');
+
+menuOpenBtn.addEventListener('click', toggleMenu);
+menuCloseBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  mobMenu.classList.toggle('is-open');
+}
