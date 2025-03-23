@@ -313,6 +313,9 @@ address {
   .hero {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/hero-image/img-mob@2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -333,6 +336,9 @@ address {
   .hero {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/hero-image/img-tablet@2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -346,12 +352,18 @@ address {
     background-color: var(--secondary-color);
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/hero-image/img-desctop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 @media (min-resolution: 192dpi) and (min-width: 1440px) {
   .hero {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/hero-image/img-desctop@2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 /* #endregion */
